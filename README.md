@@ -1,0 +1,3 @@
+# Swag-Labs-Login-Page-Test-Case-Script
+
+This repository contains a Java-based test case script for the login page of the Swag Labs e-commerce website. The script was implemented using the Selenium Framework and the Selenium WebDriver tool, which allows for automated testing of web applications. The test case script verifies the functionality of the login page and ensures that users are able to successfully log in to the website. This script serves as a valuable resource for developers and testers who are looking to automate testing of the Swag Labs login page and improve the overall quality and reliability of the website.
