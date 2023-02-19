@@ -8,7 +8,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class LoginTestScript {
     public static void main(String[] args) throws InterruptedException{
-        System.setProperty("webdriver.edge.driver", "..\\WebDriver\\Edge Driver\\edgedriver_win64\\msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver", "D:\\Projects\\Test Automation\\WebDriver\\Microsoft Edge\\edgedriver_win64\\msedgedriver.exe"); //Webdriver path
         
         WebDriver driver = new EdgeDriver();
         driver.get("https://www.saucedemo.com"); //SauceDemo.com
@@ -51,7 +51,7 @@ public class LoginTestScript {
         passwordTextField(passwordField, incorrectPassword);
         click(loginBtn);
         Thread.sleep(delay);
-        WebElement actualErrorMessage = driver.findElement(By.xpath("/html/body/div/div/div[2]/div[1]/div[1]/div/form/div[3]/h3"));
+        WebElement actualErrorMessage = driver.findElement(By.cssSelector("div.error-message-container"));
         testCase(actualErrorMessage, "TC_ID_003", "Epic sadface: Username and password do not match any user in this service");
         clearTextField(usernameField);
         clearTextField(passwordField);
